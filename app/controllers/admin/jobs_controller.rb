@@ -45,13 +45,12 @@ class Admin::JobsController < ApplicationController
       redirect_to admin_jobs_path
     end
 
-    private
+  
 
-    
+    private
 
     def job_params
       params.require(:job).permit(:title, :description)
     end
-  end
 
 end
