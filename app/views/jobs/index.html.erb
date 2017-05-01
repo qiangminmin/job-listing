@@ -1,53 +1,99 @@
+<div class="pull-right">
+  
 
-<div class="dropdown clearfix pull-right">
-    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-      排序
-        <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
-        <li>
-          <%= link_to("按照薪资下限排序", jobs_path(:order => "by_lower_bound")) %>
-        </li>
-        <li>
-            <%= link_to("按照薪资上限排序", jobs_path(:order => "by_upper_bound")) %>
+</div>
 
-        </li>
-        <li>
-          <%= link_to("按照发表时间排序", jobs_path ) %>
 
-        </li>
+<div class="dropdown clearfix" >
+    <ul class="dropdown-money">
+       <button class="dropbtn">TYPE▼</button>
+        <div class="dropdown-content">
+            <li>
+            <%= link_to("Weapon maker") %>
+            </li>
+            <li>
+              <%= link_to("Warrior") %>
+            </li>
+            <li>
+              <%= link_to("Magicians") %>
+            </li>
+            <li>
+              <%= link_to("Monster") %>
+            </li>
+            <li>
+              <%= link_to("Spy") %>
+            </li>
+         </div>
     </ul>
 </div>
 
 
-<table class="table table-boldered">
-  <thead>
-         <tr>
-             <td>
-                 职缺</td>
-             <td>薪资下限</td>
-             <td>薪资上限</td>
-             <td>刊登时间</td>
-         </tr>
+<div class="dropdown clearfix" >
+    <ul class="dropdown-money" style="margin-left: 0px;">
+       <button class="dropbtn">SALARY▼</button>
+        <div class="dropdown-content">
+            <li>
+              <%= link_to("Sort by wage lower", jobs_path(:order => "by_lower_bound")) %>
+            </li>
+            <li>
+                <%= link_to("Sort by wage upper", jobs_path(:order => "by_upper_bound")) %>
 
-     </thead>
+            </li>
+            <li>
+              <%= link_to("Sort by time", jobs_path ) %>
+            </li>
+         </div>
+    </ul>
+</div>
 
-<tbody>
+
+         <button  class="dropbtn-red" >
+
+              <%= link_to("ADD A JOB", new_admin_job_path) %>
+
+        </button>
+
+
   <% @jobs.each do |job| %>
-  <tr>
-    <td>
-      <%= link_to(job.title, job_path(job)) %>
-    </td>
-    <td>
-                <%= job.wage_lower_bound %>
-            </td>
-            <td>
-                <%= job.wage_upper_bound %>
-            </td>
-    <td>
-      <%= job.created_at %>
-    </td>
-  </tr>
-  <% end %>
-</tbody>
-</table>
+
+         <div class="job-list">
+       <ul>
+
+               <li>
+                   <a href="/job_detail/1411172989.html?ka=job_list_1" ka="job_list_1" data-itemid="1" data-lid="4-5yaLmZh" data-index="1" target="_blank">
+                   <div class="job-primary">
+                       <div class="info-primary">
+                           <h3 class="name">
+
+                                  <%= link_to(job.title,   new_job_resume_path(job)) %>
+                           </h3>
+
+                           <p class="saraly">
+
+                             <span class="red">
+
+                               <br>
+                             </span>
+
+                         </p>
+                           <p style="font-size:25px"><%= job.description %></p>
+                           <br>
+                           <p style="font-size:1em;color:#555555"> <%= job.created_at %></p>
+
+                       </div>
+                       <div class="info-comapny">
+                           <div class="company-text">
+                               <div class="company-logo" style="padding-left: 200px;">
+
+                                   <%= job.wage_lower_bound %>$ - <%= job.wage_upper_bound %>$
+                               </div>
+                                <p style="margin-top: 110px; color:#555555 "><%= job.contact_email %></p>
+                           </div>
+                       </div>
+                   </div>
+                   </a>
+               </li>
+
+          </div>
+
+   <% end %>
