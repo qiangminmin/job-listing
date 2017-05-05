@@ -1,10 +1,23 @@
-<h3> 投交履历到 <%= @job.title %> </h3>
+<br><br><br><br><br>
 
 <hr>
-
+<div class="container">
+<div class="col-md-8" style="margin-left:155px">
+  <div class="form-area">
+      <form role="form">
+        <br style="clear:both">
+<h2 style="margin-bottom: 25px; text-align: center;">Send Resume To <%= @job.title %></h2>
+<div class="form-group">
 <%= simple_form_for [@job, @resume] do |f| %>
   <%= f.input :content %>
   <%= f.input :attachment %>
-  
-  <%= f.submit "送出" %>
+
+  <%= f.submit "Submit", :class => "btn pull-right" %>
+
+</div>
+</form>
+</div>
+
+</div>
+</div>
 <% end %>

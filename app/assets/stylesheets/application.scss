@@ -31,16 +31,18 @@
 
  .title {
    color: #000000;
-   margin-top: 200px;
-   //和顶部拉开距离
-   margin-bottom: 0;
-   //这样就可以紧接息面的描述文字
+  //  background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
+  max-width: 500px;//最大宽度
+  margin-top: 100px;//和顶部拉开距离
+  margin-bottom: 0;//这样就可以紧接息面的描述文字
+  border-top-right-radius: 3px;//右上角圆边
+  border-top-left-radius: 3px;//左上角圆边
  }
 
- .jumbotron h1, .jumbotron .h1 {
-   text-align: center;
+ .jumbotron h2, .jumbotron .h2 {
+   text-align: left;
    //文字左对齐
-      color: #F5F5F5;
+      color: #000000;
    //字体颜色
       letter-spacing: 3px;
    padding: 50px 20px 0;
@@ -52,10 +54,12 @@
    //上下左右margin为0
       font-size: 26px;
    //字体大小
+   max-width: 500px;//最大宽度
+  //  background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
       letter-spacing: 3px;
    padding: 20px;
    //上下左右padding为20px
-      text-align: center;
+      text-align: left;
    //文字左对齐
       color: #F5F5F5;
    //字体颜色
@@ -110,10 +114,11 @@
 
 
 
+
 .container-fluid .jumbotron {
-  padding-bottom: 10px;
+  padding-bottom: 110px;
   //内部的底部边距，这样按钮不会很靠近底部了
-   margin: 0 -15px 0px;
+   margin: -20px -15px 20px;
   //顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
    border-radius: 0;
   //圆角为0
@@ -135,7 +140,7 @@
 }
 
 .dropbtn-red {
-    background-color: #420404;
+    background-color: #111111;
     color: #454545;
     padding: 16px;
     font-size: 16px;
@@ -144,7 +149,7 @@
    margin-right: 100px;
     border-radius: 5px;
     letter-spacing: 3px;
-   box-shadow: 0px 5px 10px rgba(49, 8, 7, 1);
+  //  box-shadow: 0px 5px 10px rgba(49, 8, 7, 1);
    margin-top:62px;
 }
 
@@ -211,7 +216,7 @@
 
 .form-area
 {
-  background-color: #660701;
+  // background-color: #111111;
 	padding: 10px 40px 60px;
 	margin: 10px 0px 60px;
 	border-radius: 5px;
@@ -1569,7 +1574,7 @@ input,button,select,textarea {
   line-height: inherit
 }
 a {
-  color: #337ab7;
+  color: #7b7277;
   text-decoration: none
 }
 a:hover,a:focus {
@@ -2160,6 +2165,7 @@ pre code {
 .col-xs-offset-12 {
   margin-left: 100%
 }
+
 @media (min-width: 768px) {
   .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12 {
     float: left
@@ -2646,14 +2652,17 @@ caption {
 th {
   text-align: left
 }
+.custab {
+
 .table {
   width: 100%;
   max-width: 100%;
   margin-bottom: 20px;
   background: #690404
 }
+
 .table a {
-  color: #ffffff
+  color: #111111
 }
 .table>thead>tr>th,.table>thead>tr>td,.table>tbody>tr>th,.table>tbody>tr>td,.table>tfoot>tr>th,.table>tfoot>tr>td {
   padding: 8px;
@@ -2662,13 +2671,13 @@ th {
   vertical-align: top;
   border-top: 1px solid #480a0a
 }
-.table>thead>tr>th {
-  vertical-align: bottom;
-  border-bottom: 5px solid #270909;
-  font-size: 20px;
-  color: #a75e5e;
-  background-color: #3f1111;
-}
+// .table>thead>tr>th {
+//   vertical-align: bottom;
+//   border-bottom: 5px solid #270909;
+//   font-size: 20px;
+//   color: #a75e5e;
+//   background-color: #3f1111;
+// }
 .table>caption+thead>tr:first-child>th,.table>caption+thead>tr:first-child>td,.table>colgroup+thead>tr:first-child>th,.table>colgroup+thead>tr:first-child>td,.table>thead:first-child>tr:first-child>th,.table>thead:first-child>tr:first-child>td {
   border-top: 0
 }
@@ -2690,12 +2699,12 @@ th {
 .table-bordered>thead>tr>th,.table-bordered>thead>tr>td {
   border-bottom-width: 2px
 }
-.table-striped>tbody>tr:nth-of-type(odd) {
-  background-color: rgba(101, 7, 0, 0.82)
-}
-.table-hover>tbody>tr:hover {
-  background-color: #fff
-}
+// .table-striped>tbody>tr:nth-of-type(odd) {
+//   background-color: rgba(101, 7, 0, 0.82)
+// }
+// .table-hover>tbody>tr:hover {
+//   background-color: #fff
+// }
 table col[class*="col-"] {
   position: static;
   float: none;
@@ -3280,18 +3289,18 @@ a.btn.disabled,fieldset[disabled] a.btn {
   background-color: #333
 }
 .btn-primary {
-  color: #a5932f;
-  background-color: #ffe866;
+  color: #f2dede;
+  background-color: #333;
   border-radius: 5px;
 }
 .btn-primary:focus,.btn-primary.focus {
   color: #fff;
-  background-color: #c6b44e;
+  background-color: #f2dede;
   border-radius: 5px;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #c6b44e;
+  background-color: #f2dede;
 }
 .btn-primary:active,.btn-primary.active,.open>.btn-primary.dropdown-toggle {
   color: #fff;
@@ -3423,14 +3432,14 @@ a.btn.disabled,fieldset[disabled] a.btn {
 .btn-danger-custom {
   color: #181818;
   font-weight: bold;
-  background-color: #b71c1c;
-  border-color: #101010;
-  border-width: 8px;
+  // background-color: #b71c1c;
+  border-color: #c8c8be;
+  // border-width: 8px;
 }
 .btn-danger-custom:hover {
   color: #fff;
-  background-color: #c9302c;
-  border-color: #ac2925
+  // background-color: #c9302c;
+  // border-color: #ac2925
 }
 .btn-danger {
   color: #fff;
@@ -4164,6 +4173,7 @@ a.badge:hover,a.badge:focus {
   color: #fff;
   text-decoration: none;
   cursor: pointer
+}
 }
 .jumbotron {
   padding-top: 30px;
@@ -8733,7 +8743,7 @@ body,html {
 }
 body {
   font-family: Verdana,"Helvetica Neue",Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
-  color: #c69e9e;
+  // color: #c69e9e;
   font-size: 14px;
   letter-spacing: 0.1em
 }
