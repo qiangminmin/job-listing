@@ -124,6 +124,34 @@
   //圆角为0
 }
 
+.jobs-show0 {
+  border-bottom: 1px dotted #CCC;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+}
+
+.jobs-show {
+  border-bottom: 1px dotted #CCC;
+  padding: 15px;
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+}
+
+
+
+#search-id {
+width: 200px;
+padding-top: 7px;
+margin: 5% 0;
+}
+
+.search-info-title {
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+  color: #111111;
+  font-size: 20px;
+  text-align: center;
+}
 
 //menu//
 
@@ -424,19 +452,19 @@
 }
 
 .job-list li .name {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   color: #d4d4d4
 }
 
 .job-list li .name .red {
   padding-left: 8px;
-  font-size: 20px
+  font-size: 15px
 }
 
 .job-list li p {
   margin-top: 25px;
-  font-size: 20px;
+  font-size: 15px;
   color: #7f3636;
   font-weight: bold;
 }
@@ -449,19 +477,19 @@
 
 .job-primary .info-primary {
   float: left;
-  font-size: 15px;
+  // font-size: 15px;
   color: #4a4160
 }
 
 .job-primary .info-primary a {
   float: left;
-  font-size: 35px;
+  // font-size: 35px;
   color: #fff
 }
 
 .info-comapny {
   float: right;
-  font-size: 30px;
+  // font-size: 30px;
   font-weight: bold;
 }
 
@@ -3963,7 +3991,10 @@ tbody.collapse.in {
   display: inline-block;
   padding-left: 0;
   margin: 20px 0;
-  border-radius: 4px
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-left: -1px;
 }
 .pagination>li {
   display: inline
@@ -3974,7 +4005,7 @@ tbody.collapse.in {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #337ab7;
+  color: #111111;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px
@@ -3990,21 +4021,22 @@ tbody.collapse.in {
 }
 .pagination>li>a:hover,.pagination>li>a:focus,.pagination>li>span:hover,.pagination>li>span:focus {
   z-index: 2;
-  color: #23527c;
+  color: #111111;
   background-color: #eeeeee;
   border-color: #ddd
 }
 .pagination>.active>a,.pagination>.active>a:hover,.pagination>.active>a:focus,.pagination>.active>span,.pagination>.active>span:hover,.pagination>.active>span:focus {
   z-index: 3;
   color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #ad9b9a;
+  border-color: #ad9b9a;
   cursor: default
 }
 .pagination>.disabled>span,.pagination>.disabled>span:hover,.pagination>.disabled>span:focus,.pagination>.disabled>a,.pagination>.disabled>a:hover,.pagination>.disabled>a:focus {
   color: #777777;
   background-color: #fff;
   border-color: #ddd;
+
   cursor: not-allowed
 }
 .pagination-lg>li>a,.pagination-lg>li>span {
@@ -9329,17 +9361,17 @@ a:active,a:hover,a:link,a:visited {
   color: #7A4702
 }
 .pagination>.active>a,.pagination>.active>a:focus,.pagination>.active>a:hover,.pagination>.active>span,.pagination>.active>span:focus,.pagination>.active>span:hover {
-  background-color: #1ecd97;
-  border-color: #1ecd97
+  background-color: #ad9b9a;
+  border-color: #ad9b9a
 }
 .pagination>li>a,.pagination>li>span {
-  color: #1ecd97
+  color: #333333
 }
 .pagination>.disabled>a,.pagination>.disabled>a:focus,.pagination>.disabled>a:hover,.pagination>.disabled>span,.pagination>.disabled>span:focus,.pagination>.disabled>span:hover {
   color: #BDBDBD
 }
 .pagination>li>a:focus,.pagination>li>a:hover,.pagination>li>span:focus,.pagination>li>span:hover {
-  color: #1ecd97
+  color: #333333
 }
 .pagination>li:first-child>a,.pagination>li:first-child>span {
   border-bottom-left-radius: 2px;
@@ -10902,7 +10934,7 @@ text-align: center;
   height: 0;
   border-style: solid;
   border-width: 17.3px 10px 0 10px;
-  border-color: #690404 transparent transparent transparent;
+  border-color: #d8d3d3 transparent transparent transparent;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
