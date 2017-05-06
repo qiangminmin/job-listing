@@ -40,7 +40,7 @@
  }
 
  .jumbotron h2, .jumbotron .h2 {
-   text-align: left;
+   text-align: center;
    //文字左对齐
       color: #000000;
    //字体颜色
@@ -56,10 +56,10 @@
    //字体大小
    max-width: 500px;//最大宽度
   //  background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-      letter-spacing: 3px;
-   padding: 20px;
+      // letter-spacing: 3px;
+   padding: 10px;
    //上下左右padding为20px
-      text-align: left;
+      text-align: center;
    //文字左对齐
       color: #F5F5F5;
    //字体颜色
@@ -411,10 +411,10 @@ margin: 5% 0;
 //--Boss 直聘----//
 
 .job-list {
-  background: #101010;
-  margin: 10px 300px 20px 100px;
+  background: #a69392;
+  margin: 10px 200px 20px 200px;
   border-radius: 10px;
-  box-shadow: 0px 10px 30px rgba(49, 8, 7, 1);
+  // box-shadow: 0px 10px 30px rgba(49, 8, 7, 1);
 }
 
 .job-tab {
@@ -444,7 +444,7 @@ margin: 5% 0;
 }
 
 .job-list li:hover {
-  background-color: #250404;
+  background-color: #b5acac;
   -webkit-transition: all linear .2s;
   transition: all linear .2s;
   border-radius: 10px;
@@ -465,7 +465,7 @@ margin: 5% 0;
 .job-list li p {
   margin-top: 25px;
   font-size: 15px;
-  color: #7f3636;
+  color: #604040;
   font-weight: bold;
 }
 
@@ -3529,7 +3529,7 @@ a.btn.disabled,fieldset[disabled] a.btn {
 }
 .btn-lg,.btn-group-lg>.btn {
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 60px;
   line-height: 1.3333333;
   border-radius: 6px;
 
@@ -4218,8 +4218,8 @@ a.badge:hover,a.badge:focus {
   color: inherit
 }
 .jumbotron p {
-  font-size: 21px;
-  font-weight: 200
+  // font-size: 21px;
+  // font-weight: 200
 }
 .jumbotron>hr {
   border-top-color: #d5d5d5
@@ -10520,7 +10520,7 @@ a:active,a:hover,a:link,a:visited {
     font-size: 1em;
     color: #999999;
     position: relative;
-    background-color: #101010;
+    background-color: #f5f0f0;
     margin: 0;
     letter-spacing: 4px;
     padding: 1em;
@@ -10532,7 +10532,7 @@ a:active,a:hover,a:link,a:visited {
     display: block;
     width: 120%;
     margin: 0 auto;
-    height: auto;
+    height: 400px;
   }
 //------//
 /*-------------------------------*/
@@ -10579,8 +10579,8 @@ text-align: center;
   bottom: 10px;
 }
 #fade-quote-carousel.carousel .carousel-indicators > li {
-  background-color: #690404;
-  border: none;
+  // background-color: #690404;
+  // border: none;
 }
 #fade-quote-carousel.carousel .carousel-indicators .active {
   background-color: #fff;
@@ -10595,10 +10595,10 @@ text-align: center;
     border: none;
 }
 #fade-quote-carousel .profile-circle {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     margin: 20px auto;
-    border-radius: 100px;
+    // border-radius: 300px;
 }
 //-----//
 .lp-section-3 .container {

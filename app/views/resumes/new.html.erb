@@ -6,7 +6,7 @@
   <div class="form-area">
       <form role="form">
         <br style="clear:both">
-<h2 style="margin-bottom: 25px; text-align: center;">Send Resume To <%= @job.title %></h2>
+<h2 style="margin-bottom: 25px; text-align: center;">Send Resume To<br> <%= @job.title %></h2>
 <div class="form-group">
 <%= simple_form_for [@job, @resume] do |f| %>
   <%= f.input :content %>
